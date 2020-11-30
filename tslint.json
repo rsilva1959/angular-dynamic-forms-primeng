@@ -12,6 +12,9 @@
     "curly": false,
     "eofline": false,
     "forin": false,
+    "deprecation": {
+      "severity": "warning"
+    },
     "import-blacklist": [
       true
     ],
