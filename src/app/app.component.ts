@@ -19,10 +19,9 @@ import { DynamicFormComponent } from './dynamic-form/containers/dynamic-form/dyn
   `
 })
 export class AppComponent implements AfterViewInit {
+  @ViewChild(DynamicFormComponent, { static: true }) form: DynamicFormComponent;
 
-  constructor() { }
 
-  @ViewChild(DynamicFormComponent) form: DynamicFormComponent;
 
   config = [
     {
@@ -77,6 +76,7 @@ export class AppComponent implements AfterViewInit {
       disabled: false
     }
   ];
+  constructor() { }
 
   ngAfterViewInit() {
     let previousValid = this.form.valid;

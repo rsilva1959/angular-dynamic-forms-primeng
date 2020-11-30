@@ -1,0 +1,24 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../out-tsc/app",
+    "baseUrl": ".",
+    "types": [],
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "@shared/*": ["app/shared/*"],
+      "@core/*": ["app/core/*"],
+      "@catalog/*": ["app/catalog/*"],
+      "@checkout/*": ["app/checkout/*"],
+      "@rewards/*": ["app/rewards/*"],
+      "@sales/*": ["app/sales/*"],
+      "@shop/*": ["app/shop/*"],
+      "@site/*": ["app/site/*"],
+      "@admin/*": ["app/admin/*"]
+    }
+  },
+  "exclude": [
+    "test.ts",
+    "**/*.spec.ts"
+  ]
+}

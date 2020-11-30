@@ -1,0 +1,36 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "importHelpers": true,
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "allowSyntheticDefaultImports": true,
+    "downlevelIteration": true,
+    "target": "es2015",
+    "resolveJsonModule": true,
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "module": "esnext",
+    "baseUrl": ".",
+    "paths": {
+      "@shared/*": ["src/app/shared/*"],
+      "@core/*": ["src/app/core/*"],
+      "@catalog/*": ["src/app/catalog/*"],
+      "@checkout/*": ["src/app/checkout/*"],
+      "@rewards/*": ["src/app/rewards/*"],
+      "@sales/*": ["src/app/sales/*"],
+      "@shop/*": ["src/app/shop/*"],
+      "@site/*": ["src/app/site/*"],
+      "@admin/*": ["src/app/admin/*"]
+    }
+  }
+}
